@@ -47,7 +47,7 @@ export default function Namao_Story() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="hidden lg:block md:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="hidden md:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: 'url("/sturgeonimgblur2.jpg")' }}
       />
 
@@ -56,7 +56,7 @@ export default function Namao_Story() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="lg:hidden md:hidden block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="md:hidden block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: 'url("/sturgeonmobileblur.jpg")' }}
       />
 
@@ -65,7 +65,7 @@ export default function Namao_Story() {
         initial={{ opacity: 0 }}
         animate={{ opacity: contentVisible ? 1 : 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="relative z-10 w-full"
+        className="relative z-10 w-full min-h-screen"
       >
         {slides.map((SlideComponent, index) => (
           <motion.div
