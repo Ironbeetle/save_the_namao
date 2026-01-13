@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import VideoEmbed from '../components/VideoEmbed';
 
-// Placeholder video data - replace with your actual video URLs
+// Video data - more videos will be added including Vimeo links
 const videos = [
   {
     id: 1,
-    url: 'https://www.youtube.com/watch?v=PLACEHOLDER',
-    title: 'The Story of Namao',
-    description: 'An introduction to the Lake Sturgeon and its cultural significance to Tataskweyak Cree Nation.',
+    url: 'https://www.youtube.com/embed/IGqrFTXdA1I',
+    title: 'HYDRO',
+    description: 'Documentary about Manitoba Hydro and its impact on Tataskweyak Cree Nation.',
     platform: 'youtube' as const,
     category: 'Documentary',
   },
