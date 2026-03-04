@@ -1,38 +1,34 @@
 import { motion } from 'framer-motion';
 
-// Placeholder research data - replace with your actual reports
 const researchItems = [
   {
     id: 1,
-    title: 'Lake Sturgeon Population Assessment',
-    authors: 'Research Team Name',
-    year: '2024',
-    description: 'Comprehensive study on the current population status of Lake Sturgeon in the Churchill River system.',
+    title: 'Churchill River Adult Movement Study Summary Report',
+    authors: 'AAE Tech',
+    year: '2025',
+    description: 'Summary report on adult Lake Sturgeon movement patterns in the Churchill River system.',
     type: 'Scientific Study',
-    pdfUrl: '/reports/placeholder-study-1.pdf',
+    pdfUrl: '/reports/25 11 05 AAE Tech Churchill River Adult Movement Study Summary Report - FINAL.pdf',
   },
   {
     id: 2,
-    title: 'Impact of Churchill River Diversion on Aquatic Ecosystems',
-    authors: 'Environmental Research Institute',
-    year: '2023',
-    description: 'Analysis of ecological changes following the implementation of the Churchill River Diversion.',
+    title: 'Impact of the CRD on Lake Sturgeon',
+    authors: 'Halket, AAE Tech',
+    year: '2025',
+    description: 'Analysis of the impact of the Churchill River Diversion (CRD) on Lake Sturgeon populations.',
     type: 'Environmental Report',
-    pdfUrl: '/reports/placeholder-study-2.pdf',
+    pdfUrl: '/reports/25 11 06 Halket AAE Tech Impact of the CRD on Lake Sturgeon - Final.pdf',
   },
   {
     id: 3,
-    title: 'Traditional Ecological Knowledge of Namao',
-    authors: 'Tataskweyak Cree Nation Elders',
-    year: '2022',
-    description: 'Documentation of traditional knowledge about Lake Sturgeon from community elders.',
-    type: 'Traditional Knowledge',
-    pdfUrl: '/reports/placeholder-study-3.pdf',
+    title: 'Churchill River Lake Sturgeon Population Assessment Report',
+    authors: 'AAE Tech',
+    year: '2025',
+    description: 'Comprehensive population assessment of Lake Sturgeon in the Churchill River.',
+    type: 'Scientific Study',
+    pdfUrl: '/reports/25 11 07 AAE Tech Churchill River Lake Sturgeon Population Assessment Report - FINAL.pdf',
   },
-  // Add more research items as needed
 ];
-
-const categories = ['All', 'Scientific Study', 'Environmental Report', 'Traditional Knowledge', 'Government Report'];
 
 export default function ResearchReports() {
   return (
@@ -59,25 +55,9 @@ export default function ResearchReports() {
             Research & Studies
           </h1>
           <p className="text-body-lg text-dark-strong mt-4 max-w-3xl">
-            Scientific research, environmental studies, and traditional knowledge documentation 
-            supporting the protection of Namao and our waterways.
+            Scientific research, environmental studies,supporting the protection of Namao and our waterways.
           </p>
         </div>
-
-        {/* Category Filter */}
-        <div className="px-4 lg:px-8 pb-6">
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className="px-4 py-2 rounded-full bg-neutral-900/60 text-white/70 hover:bg-amber-500/30 hover:text-amber-200 transition-all duration-200 text-sm"
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-
         {/* Research List */}
         <div className="px-4 lg:px-8 pb-12">
           <div className="space-y-4">
@@ -124,16 +104,6 @@ export default function ResearchReports() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-
-        {/* Placeholder Notice */}
-        <div className="px-4 lg:px-8 pb-12">
-          <div className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20 text-center">
-            <p className="text-white/60">
-              📄 Add your PDF reports to the <code className="text-amber-200/80 bg-neutral-800 px-2 py-1 rounded">public/reports/</code> folder 
-              and update the <code className="text-amber-200/80 bg-neutral-800 px-2 py-1 rounded">researchItems</code> array with actual data.
-            </p>
           </div>
         </div>
       </motion.div>

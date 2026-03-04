@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 import MobileNav from './MobileNav';
 
 export default function Layout() {
@@ -10,7 +10,7 @@ export default function Layout() {
       <MobileNav />
       
       {/* Desktop Sidebar - visible on large screens */}
-      <Sidebar />
+      {/* <Sidebar /> */}
       
       {/* Main content area */}
       <motion.main

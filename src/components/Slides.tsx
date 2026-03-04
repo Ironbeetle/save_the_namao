@@ -96,9 +96,9 @@ export const Slide2 = () =>{
                     </div>
                     <div className='h-[5vh] lg:h-[10vh] w-full' />
                 </div>
-                <div className='w-full flex flex-col justify-center items-center mt-[5vh] lg:mt-[8vh] pt-[5vh] lg:pt-[8vh]'>
+                <div className='w-full flex flex-col justify-center items-center mt-[5vh] lg:mt-[4vh] pt-[5vh] lg:pt-[8vh]'>
                     <img loading="lazy" 
-                        className="w-[80%] lg:w-[50%] h-auto object-contain overflow-hidden"
+                        className="w-[80%] lg:w-[80%] h-auto object-contain overflow-hidden"
                         src="/RSPaintingNamao.png"
                         alt="Stewards Role"
                         width={200}
@@ -106,7 +106,7 @@ export const Slide2 = () =>{
                     />
                 </div>
             </div>
-            <div className='h-[1vh] lg:h-[10vh] w-full' />
+            <div className='h-[1vh] lg:h-[8vh] w-full' />
         </div>
     )
 }
@@ -114,7 +114,7 @@ export const Slide2 = () =>{
 export const Slide3 = () =>{
     return (
         <div className="h-auto w-full">
-            <div className='h-[1vh] lg:h-[10vh] w-full' />
+            <div className='h-[1vh] lg:h-[8vh] w-full' />
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-heading text-dark text-center">
@@ -123,17 +123,16 @@ export const Slide3 = () =>{
                     </div>
                     <div className='h-[5vh] lg:h-[10vh] w-full' />
                 </div>
-                <div className="lg:p-8">
-                    <img loading="lazy" 
-                        className="w-full h-full object-contain overflow-hidden"
-                        src="/PLaceholder.jpg"
-                        alt="Robert's painting"
+                <div className="flex flex-col justify-center items-center p-2 lg:p-8">
+                   <img loading="lazy" 
+                        className="w-full h-auto object-fit"
+                        src="/ATKfront.jpg"
+                        alt="Stewards Role"
                         width={200}
                         height={200}
                     />
                 </div>
             </div>
-            <div className='h-[0vh] lg:h-[10vh] w-full' />
         </div>
     )
 }
@@ -141,7 +140,7 @@ export const Slide3 = () =>{
 export const Slide4 = () =>{
     return (
         <div className="h-auto w-full">
-            <div className='h-[1vh] lg:h-[10vh] w-full' />
+            {/* <div className='h-[1vh] lg:h-[5vh] w-full' /> */}
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-evenly items-center p-2 lg:p-8">
                      <div className="text-heading text-dark lg:p-6 p-2">
@@ -193,8 +192,8 @@ export const Slide5 = () =>{
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-heading text-dark-strong text-center">
-                        TATASKWEYAK CREE NATION <br/>have been engaged in efforts to 
-                        protect what they believe to be the last remaining NAMAO population on the lower 
+                        TATASKWEYAK CREE NATION <br/>has been engaged in efforts to 
+                        protect what citizens believe to be the last remaining NAMAO population on the lower 
                         Churchill River from the economic interests of<br/> MANITOBA HYDRO.
                     </div>
                     <div className='h-[5vh] lg:h-[10vh] w-full' />
@@ -307,9 +306,9 @@ export const Slide7 = () =>{
                 </div>
                 <div className="lg:p-8">
                     <img loading="lazy" 
-                        className="w-full h-full object-contain overflow-hidden"
-                        src="/PLaceholder.jpg"
-                        alt="Robert's painting"
+                        className="w-full h-auto object-fit"
+                        src="/LandUsebkg.jpg"
+                        alt="Stewards Role"
                         width={200}
                         height={200}
                     />
@@ -368,8 +367,8 @@ export const Slide9 = () =>{
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                       <div className="text-heading text-dark-strong p-4">
-                        While MANITOBA HYDRO'S operations has profoundly altered the natural river system.<br/>
-                        Tataskweyak's innate connection to the lands and waters,<br/> has never been severed.
+                        MANITOBA HYDRO'S operations has profoundly altered the natural river system,<br/>
+                        Tataskweyak's innate connection to the lands and waters,<br/> have never been severed.
                     </div>
                     <div className='h-[5vh] lg:h-[10vh] w-full' />
                 </div>
@@ -465,6 +464,24 @@ export const Slide12 = () =>{
                     <div className="text-heading text-dark-strong p-6 mb-6">
                             The flow of the Churchill River is dictated by the power needs of Manitoba Hydro.
                     </div>
+                   
+                    <div className='h-[5vh] lg:h-[10vh] w-full' />
+                </div>
+                <div className="flex flex-col items-center justify-center p-2">
+                    <div className='w-full flex flex-col justify-center items-center lg:p-2'>
+                        <img loading="lazy" 
+                            className="w-full h-auto object-cover overflow-hidden"
+                            src="/MissiFalls2.jpg"
+                            alt="Stewards Role"
+                            width={200}
+                            height={200}
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className='h-[5vh] lg:h-[10vh] w-full' />
+            <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
+                <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-quote text-accent border-l-4 border-amber-400 px-4 bg-black/20">
                         This need leaves the Churchill River with more extreme high and low flows, 
                         creating cycles of drought punctuated by extreme floods that make it hard for any species, including NAMAO, to survive.
@@ -475,18 +492,17 @@ export const Slide12 = () =>{
                     <div className='w-full flex flex-col justify-center items-center lg:p-2'>
                         <img loading="lazy" 
                             className="w-full h-auto object-cover overflow-hidden"
-                            src="/MissiFalls1.jpg"
+                            src="/AAE_ChurchillFlyover_10.jpg"
                             alt="Stewards Role"
                             width={200}
                             height={200}
                         />
-                      
                     </div>
                     <div className='h-[2vh] lg:h-[0vh] w-full' />
                     <div className='w-full flex flex-col justify-center items-center lg:p-2'>
                         <img loading="lazy" 
                             className="w-full h-auto object-contain overflow-hidden"
-                            src="/MissiFalls2.jpg"
+                            src="/L1180046.jpg"
                             alt="Stewards Role"
                             width={200}
                             height={200}
@@ -494,7 +510,6 @@ export const Slide12 = () =>{
                     </div>
                 </div>
             </div>
-            <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
 }
@@ -512,28 +527,16 @@ export const Slide13 = () =>{
                     <div className='h-[5vh] lg:h-[0vh] w-full' />
                 </div>
                 <div className="flex flex-col items-center justify-center lg:p-6">
-                    <div className="w-full grid grid-cols-3 gap-4">
+                    <div className="w-full grid grid-cols-1 gap-4">
+                        <div className='w-full flex flex-col justify-center items-center lg:p-2'>
                         <img loading="lazy" 
                             className="w-full h-auto object-cover overflow-hidden"
-                            src="/LCR20201.jpg"
+                            src="/AAE_ChurchillFlyover_1.jpg"
                             alt="Stewards Role"
                             width={200}
                             height={200}
                         />
-                        <img loading="lazy" 
-                            className="w-full h-auto object-cover overflow-hidden"
-                            src="/LCR20202.jpg"
-                            alt="Stewards Role"
-                            width={200}
-                            height={200}
-                        />
-                        <img loading="lazy" 
-                            className="w-full h-auto object-contain overflow-hidden"
-                            src="/LCR20203.jpg"
-                            alt="Stewards Role"
-                            width={200}
-                            height={200}
-                        />
+                    </div>
                     </div>
                 </div>
             </div>
@@ -582,7 +585,7 @@ export const Slide15 = () =>{
                 <div className="flex flex-col items-center justify-center p-2 lg:p-8">
                     <img loading="lazy" 
                         className="w-full h-full object-contain overflow-hidden"
-                        src="/PLaceholder.jpg"
+                        src="/Sturgeon222.jpg"
                         alt="Winnipeg City Night Skyline"
                         width={200}
                         height={200}
@@ -609,7 +612,7 @@ export const Slide16 = () =>{
                 <div className="flex flex-col items-center justify-center p-2 lg:p-8">
                     <img loading="lazy" 
                         className="w-full h-full object-contain overflow-hidden"
-                        src="/PLaceholder.jpg"
+                        src="/CityViewOK.jpg"
                         alt="Winnipeg City Night Skyline"
                         width={200}
                         height={200}
@@ -628,21 +631,21 @@ export const Slide17 = () =>{
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-heading text-dark-strong p-4 mb-5">
-                        We of the north cannot stand by quiet while our lands and waters 
+                        We of the north cannot stand quietly by while our lands and waters 
                         are taken advantage of. 
                     </div>
                     <div className="text-heading text-dark-strong p-4 mt-2">
-                        It is our responsibility as members of<br/> TATASKWYAK CREE NATION <br/>to protect all our relations.
+                        It is our responsibility as members of<br/> TATASKWEYAK CREE NATION <br/>to protect all our relations.
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center p-2 lg:p-8">
-                <img loading="lazy" 
-                    className="w-full h-full object-contain overflow-hidden"
-                    src="/PLaceholder.jpg"
-                    alt="Stewards Role"
-                    width={200}
-                    height={200}
-                />
+                    <img loading="lazy" 
+                        className="w-full h-full object-contain overflow-hidden"
+                        src="/tcnaboutbkg.jpg"
+                        alt="Stewards Role"
+                        width={200}
+                        height={200}
+                    />
                 </div>
             </div>
             <div className='h-[5vh] lg:h-[10vh] w-full' />
@@ -654,24 +657,25 @@ export const Slide18 = () =>{
     return (
         <div className="h-auto w-full">
             <div className='h-[5vh] lg:h-[10vh] w-full' />
-            <div className="grid grid-cols-1 lg:grid-cols-2 h-full"> 
                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-heading text-dark-strong p-4 mb-6">
                         As a result of declines in NAMAO populations, TATASKWEYAK placed a moratorium on NAMAO harvesting in the mid-2010s.
                     </div>
+                </div>
+                <div className="flex flex-col items-center justify-center p-2 lg:p-8">
+                    <img loading="lazy" 
+                        className="w-full h-full object-contain overflow-hidden"
+                        src="/Sturgeon333.jpg"
+                        alt="Stewards Role"
+                        width={200}
+                        height={200}
+                    />
+                </div>
+                 <div className="flex flex-col justify-center items-center p-2 lg:p-8">
                     <div className="text-quote text-accent border-l-4 border-amber-400 px-4 bg-black/20">
                         We took this step as part of our commitment to fulfill our inherent stewardship responsibilities for our lands and waters.
                     </div>
-                   <div className='h-[5vh] lg:h-[0vh] w-full' />
                 </div>
-                <img loading="lazy" 
-                    className="w-full h-full object-contain overflow-hidden"
-                    src="/PLaceholder.jpg"
-                    alt="Stewards Role"
-                    width={200}
-                    height={200}
-                />
-            </div>
             <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
@@ -689,35 +693,25 @@ export const Slide19 = () =>{
                     habitat and health of the remaining NAMAO population.
                     </div>
                 </div>
-                <div className="lg:p-4">
-                    <div className="flex flex-col items-center justify-center p-2">
-                        <div className="w-full flex flex-row justify-start items-center">
-                            <img loading="lazy" 
-                                className="w-[48%] h-auto object-cover overflow-hidden"
-                                src="/stewardshiplab11.jpg"
-                                alt="Stewards Role"
-                                width={200}
-                                height={200}
-                            />
-                        </div>
-                        <div className="w-full h-auto flex flex-row justify-end items-center">
-                            <img loading="lazy" 
-                                className="w-[50%] h-auto object-cover overflow-hidden"
-                                src="/watersampler.jpg"
-                                alt="Stewards Role"
-                                width={200}
-                                height={200}
-                            />
-                        </div>
-                        <div className="w-full h-auto flex flex-row justify-start items-center">
-                            <img loading="lazy" 
-                                className="w-[47%] h-auto object-cover overflow-hidden"
-                                src="/stewardshiplab.jpg"
-                                alt="Stewards Role"
-                                width={200}
-                                height={200}
-                            />
-                        </div>
+                <div className="flex flex-col items-center justify-center p-8">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-1 lg:gap-4">
+                        <img loading="lazy" 
+                            className="w-full h-auto object-fit"
+                            src="/stewardshiplab11.jpg"
+                            alt="Stewards Role"
+                            width={200}
+                            height={200}
+                        />
+                      
+                    </div>
+                    <div className='w-full flex flex-col justify-center items-center pt-3'>
+                        <img loading="lazy" 
+                            className="w-full h-auto object-contain overflow-hidden"
+                            src="/watersampler.jpg"
+                            alt="Stewards Role"
+                            width={200}
+                            height={200}
+                        />
                     </div>
                 </div>
             </div>
@@ -762,13 +756,15 @@ export const Slide21 = () =>{
                     </div>
                     <div className='h-[5vh] lg:h-[0vh] w-full' />
                 </div>
-                <img loading="lazy" 
-                    className="w-full h-full object-contain overflow-hidden"
-                    src="/PLaceholder.jpg"
-                    alt="Stewards Role"
-                    width={200}
-                    height={200}
-                />
+                <div className="flex flex-col justify-center items-center p-2 lg:p-8">
+                    <img loading="lazy" 
+                        className="w-full h-auto object-contain overflow-hidden"
+                        src="/ottawa-parliament-hill-building.jpg"
+                        alt="Stewards Role"
+                        width={200}
+                        height={200}
+                    />
+                </div>
             </div>
             <div className='h-[1vh] lg:h-[10vh] w-full' />
         </div>

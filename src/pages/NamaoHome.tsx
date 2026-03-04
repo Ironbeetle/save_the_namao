@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function NamaoHome() {
   return (
@@ -9,8 +10,24 @@ export default function NamaoHome() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: 'easeInOut' }} 
-        className="hidden lg:block md:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="hidden lg:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: 'url("/sturgeonimage1.jpg")' }}
+      />
+      {/* Fixed background layer tablet landscape */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }} 
+        className="hidden md:max-lg:landscape:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: 'url("/namaotabletlndscape.jpg")' }}
+      />
+      {/* Fixed background layer tablet portrait */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }} 
+        className="hidden md:max-lg:portrait:block fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: 'url("/namaotabletportrait.jpg")' }}
       />
       {/* Fixed background layer mobile */}
       <motion.div 
@@ -27,7 +44,7 @@ export default function NamaoHome() {
         transition={{ duration: 1, delay: 0.50, ease: 'easeInOut' }} 
         className="relative z-10 w-full min-h-screen"
       >
-        <div className="h-[20vh] text-7xl md:text-8xl lg:text-9xl font-bold text-neutral-900/50 rounded flex items-start justify-center p-12">
+        <div className="h-[20vh] text-6xl md:text-7xl lg:text-8xl font-bold text-neutral-900/50 rounded flex items-start justify-center p-12">
             Save The Namao
         </div>
         <div className="h-[80vh] flex items-end justify-center p-12">

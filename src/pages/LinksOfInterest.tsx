@@ -24,12 +24,7 @@ const linkCategories = [
         title: 'Lake Sturgeon - Species at Risk',
         url: 'https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry.html',
         description: 'Government of Canada Species at Risk Public Registry.',
-      },
-      {
-        title: 'Manitoba Lake Sturgeon Management',
-        url: 'https://www.gov.mb.ca/fish-wildlife/',
-        description: 'Manitoba Fish and Wildlife - Lake Sturgeon information.',
-      },
+      }
     ],
   },
   {
@@ -201,7 +196,7 @@ export default function LinksOfInterest() {
           </motion.div>
         </div>
 
-        {/* Add More Links Notice */}
+        {/* Add More Links Notice
         <div className="px-4 lg:px-8 pb-12">
           <div className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20 text-center">
             <p className="text-white/60">
@@ -209,7 +204,7 @@ export default function LinksOfInterest() {
               in this component.
             </p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </>
   );

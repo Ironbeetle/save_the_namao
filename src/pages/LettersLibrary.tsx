@@ -1,35 +1,69 @@
 import { motion } from 'framer-motion';
 
-// Placeholder letters data - replace with your actual letters
 const letters = [
   {
     id: 1,
-    title: 'Request for Environmental Assessment',
-    recipient: 'Minister of Environment and Climate Change',
-    date: '2024-06-15',
-    summary: 'Formal request for a comprehensive environmental assessment before granting permanent operating licence to Manitoba Hydro.',
-    pdfUrl: '/letters/placeholder-letter-1.pdf',
+    title: 'Re: Fisheries Authorization Missi Falls Control Structure 2025',
+    recipient: 'Department of Fisheries and Oceans (DFO)',
+    date: '2025-04-22',
+    summary: 'Letter -- TCN Chief Doreen Spence requests meeting with DFO to discuss CRD',
+    pdfUrl: '/documents/25 04 22 SENT TCN lt DFO Re_Fisheries Authorization Missi Falls Control Structure 2025.pdf',
     status: 'Sent',
   },
   {
     id: 2,
-    title: 'Treaty Rights and Namao Protection',
-    recipient: 'Minister of Crown-Indigenous Relations',
-    date: '2024-05-20',
-    summary: 'Letter highlighting the violation of Treaty rights through the destruction of traditional fisheries.',
-    pdfUrl: '/letters/placeholder-letter-2.pdf',
-    status: 'Response Received',
+    title: 'Re: CEC LWR Process',
+    recipient: 'Minister Moyes',
+    date: '2025-05-13',
+    summary: 'Letter -- TCN Chief Doreen Spence calls on MB government to Clean Environment Commission review of CRD',
+    pdfUrl: '/documents/25 05 13 TCN LT Minister Moyes re CEC LWR Process - to send.pdf',
+    status: 'Sent',
   },
   {
     id: 3,
-    title: 'Appeal for Species Protection',
-    recipient: 'Province of Manitoba - Minister of Natural Resources',
-    date: '2024-04-10',
-    summary: 'Urgent appeal for provincial action to protect Lake Sturgeon populations.',
-    pdfUrl: '/letters/placeholder-letter-3.pdf',
-    status: 'Pending Response',
+    title: 'Re: Sharing Reports',
+    recipient: 'Department of Fisheries and Oceans (DFO)',
+    date: '2025-11-19',
+    summary: 'Letter -- TCN Chief Doreen Spence calls on DFO to protect namao on lower Churchill River',
+    pdfUrl: '/documents/25 11 19 LT DFO re sharing reports - to send.pdf',
+    status: 'Sent',
   },
-  // Add more letters as needed
+  {
+    id: 4,
+    title: 'Re: Lower Churchill River Sturgeon',
+    recipient: 'Department of Fisheries and Oceans (DFO)',
+    date: '2025-11-19',
+    summary: 'Letter -- Chief Spence letter to DFO concerning Lake Sturgeon in the Lower Churchill River.',
+    pdfUrl: '/documents/25 11 19 TCN Chief Spence LT DFO re Lower Churchill River Sturgeon - to send.pdf',
+    status: 'Sent',
+  },
+  {
+    id: 5,
+    title: 'Re: Increase Missi Flows',
+    recipient: 'MBH Sala',
+    date: '2025-12-03',
+    summary: 'Letter -- TCN Chief Doreen Spence responds to 2025 Notice of Operating Plan Forecast- Missi Falls',
+    pdfUrl: '/documents/25 12 03 LT MBH Sala re increase Missi flows - to send.pdf',
+    status: 'Sent',
+  },
+  {
+    id: 6,
+    title: 'Re: STEL',
+    recipient: 'Moyes Sala',
+    date: '2025-12-04',
+    summary: 'Letter -- TCN Chief Doreen Spence responds to Short Term Extension Licence Request',
+    pdfUrl: '/documents/25 12 04 LT Moyes Sala re STEL - to send.pdf',
+    status: 'Sent',
+  },
+  {
+    id: 7,
+    title: 'Re: Op Ed Tataskweyak Cree Nation',
+    recipient: 'Open Letter',
+    date: '2026-02-17',
+    summary: 'Letter -- TCN Chief Doreen Spence commentary on Churchill River Diversion project liscence renewal.',
+    pdfUrl: '/documents/26 02 17 Op Ed Tataskweyak Cree Nation final clean.pdf',
+    status: 'Sent',
+  },
 ];
 
 const statusColors: Record<string, string> = {
@@ -67,21 +101,6 @@ export default function LettersLibrary() {
             Archive of official correspondence with federal and provincial governments 
             regarding Namao protection and Treaty rights.
           </p>
-        </div>
-
-        {/* Urgency Banner */}
-        <div className="px-4 lg:px-8 pb-6">
-          <div className="bg-red-900/40 border border-red-500/40 rounded-lg p-4">
-            <div className="flex items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-red-400">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-              </svg>
-              <p className="text-red-200">
-                <strong>Deadline Alert:</strong> Manitoba Hydro's permanent operating licence decision is expected by September 2026. 
-                Time is critical for government action.
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Letters Timeline */}
@@ -147,16 +166,6 @@ export default function LettersLibrary() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-
-        {/* Placeholder Notice */}
-        <div className="px-4 lg:px-8 pb-12">
-          <div className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20 text-center">
-            <p className="text-white/60">
-              ✉️ Add your letter PDFs to the <code className="text-amber-200/80 bg-neutral-800 px-2 py-1 rounded">public/letters/</code> folder 
-              and update the <code className="text-amber-200/80 bg-neutral-800 px-2 py-1 rounded">letters</code> array with actual correspondence data.
-            </p>
           </div>
         </div>
       </motion.div>

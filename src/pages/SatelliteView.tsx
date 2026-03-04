@@ -16,28 +16,28 @@ const locations = [
     name: 'Tataskweyak Cree Nation (Split Lake)',
     description: 'Traditional territory of Tataskweyak Cree Nation',
     coordinates: [-96.1, 56.27], // [longitude, latitude]
-    zoom: 10,
+    zoom: 11,
   },
   {
     id: 'churchill-river',
     name: 'Churchill River',
     description: 'The Churchill River before the diversion point',
-    coordinates: [-97.0, 56.5],
-    zoom: 9,
+    coordinates: [-96.110147, 57.176928],
+    zoom: 10,
   },
   {
     id: 'diversion',
     name: 'Churchill River Diversion',
     description: 'Location of Manitoba Hydro\'s Churchill River Diversion infrastructure',
-    coordinates: [-97.5, 56.0],
-    zoom: 11,
+    coordinates: [-98.133681, 57.323906],
+    zoom: 15,
   },
   {
     id: 'nelson-river',
     name: 'Nelson River',
     description: 'The Nelson River receiving diverted waters',
-    coordinates: [-94.5, 56.0],
-    zoom: 9,
+    coordinates: [-96.60727855077786, 55.78092148246775],
+    zoom: 10,
   },
 ];
 

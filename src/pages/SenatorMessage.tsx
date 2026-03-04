@@ -38,13 +38,13 @@ export default function SenatorMessage() {
             className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20 max-w-4xl"
           >
             <div className="flex flex-col md:flex-row gap-6 items-start">
-              {/* Senator Photo Placeholder */}
+              {/* Senator Photo */}
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-lg bg-neutral-800/60 flex items-center justify-center border border-amber-500/20">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-12 h-12 text-white/40">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                  </svg>
-                </div>
+                <img
+                  src="/sentatorprofileimg.jpg"
+                  alt="Senator Mary Jane McCallum"
+                  className="w-32 h-32 rounded-lg object-cover border border-amber-500/20"
+                />
               </div>
 
               {/* Senator Info */}
@@ -77,28 +77,18 @@ export default function SenatorMessage() {
               Video Message
             </h2>
             
-            {/* Video Embed Placeholder */}
+            {/* Video Embed */}
             <div className="bg-neutral-900/60 rounded-lg overflow-hidden border border-amber-500/20">
-              <div className="relative w-full pt-[56.25%] bg-neutral-800/60">
-                {/* Replace this placeholder with actual video embed */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white/40">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-16 h-16 mb-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-                  </svg>
-                  <p className="text-lg">Senator McCallum's Video Message</p>
-                  <p className="text-sm mt-2">Replace with actual video URL</p>
-                </div>
-
-                {/* Uncomment and update this iframe when you have the actual video URL
+              <div className="relative w-full pt-[56.25%]">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID"
-                  title="Senator McCallum's Message"
+                  src="https://player.vimeo.com/video/1157112087?badge=0&autopause=0&player_id=0&app_id=58479"
+                  title="Senator McCallum - Tataskweyak Cree Nation - FINAL"
                   className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
-                */}
               </div>
             </div>
           </motion.div>
@@ -118,12 +108,13 @@ export default function SenatorMessage() {
 
             <div className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20">
               <blockquote className="text-quote text-white/80 italic border-l-4 border-amber-500 pl-6">
-                "Add Senator McCallum's key quote or message here..."
+                "I ask that you to remember every
+                time you use electricity, the great cost to northern citizens and nonhumans."
               </blockquote>
-              <p className="text-white/60 mt-4">
-                — Senator Mary Jane McCallum, speaking on the importance of protecting Namao 
-                and honoring Treaty rights.
-              </p>
+              {/* <p className="text-white/60 mt-4">
+                I ask that you remember every
+                time you use electricity the great cost to northern citizens and nonhumans.
+              </p> */}
             </div>
           </motion.div>
         </div>
@@ -155,16 +146,6 @@ export default function SenatorMessage() {
               </svg>
             </a>
           </motion.div>
-        </div>
-
-        {/* Placeholder Notice */}
-        <div className="px-4 lg:px-8 pb-12">
-          <div className="bg-neutral-900/60 rounded-lg p-6 border border-amber-500/20 text-center max-w-4xl">
-            <p className="text-white/60">
-              🎤 Update this page with Senator McCallum's actual video URL and quote. 
-              You may also add a photo to the <code className="text-amber-200/80 bg-neutral-800 px-2 py-1 rounded">public/</code> folder.
-            </p>
-          </div>
         </div>
       </motion.div>
     </>

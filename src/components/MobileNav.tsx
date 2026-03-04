@@ -44,6 +44,9 @@ export default function MobileNav() {
           <span className="text-amber-200/90 font-semibold text-sm">Save The Namao</span>
         </div>
 
+        {/* spacer for alignment */}
+        <div className="mr-2" />
+
         {/* Hamburger Button */}
         <button
           onClick={toggleMenu}
