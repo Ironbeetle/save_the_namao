@@ -17,7 +17,7 @@ export default function Layout() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full lg:pr-64 min-h-screen"
+        className="w-full min-h-screen p-4"
       >
         <Outlet />
       </motion.main>

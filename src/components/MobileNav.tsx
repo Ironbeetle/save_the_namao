@@ -5,18 +5,82 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface NavItem {
   path: string;
   label: string;
+  icon: React.ReactNode;
 }
 
 const navItems: NavItem[] = [
-  { path: '/', label: 'Home' },
-  { path: '/story', label: 'The Story' },
-  { path: '/gallery', label: 'Picture Gallery' },
-  { path: '/videos', label: 'Video Gallery' },
-  { path: '/research', label: 'Research & Studies' },
-  { path: '/letters', label: 'Letters Library' },
-  { path: '/senator-message', label: 'Senator McCallum' },
-  { path: '/satellite', label: 'Satellite Views' },
-  { path: '/links', label: 'Links of Interest' },
+  { path: '/', 
+    label: 'Home',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      </svg>
+    ) 
+  },
+  { path: '/story', 
+    label: 'The Story',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+    )
+  },
+  { path: '/gallery', 
+    label: 'Picture Gallery',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/videos', 
+    label: 'Video Gallery',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/research', 
+    label: 'Research & Studies',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/letters', 
+    label: 'Letters Library',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/senator-message', 
+    label: 'Senator McCallum',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/satellite', 
+    label: 'Satellite Views',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
+  { path: '/links', 
+    label: 'Links of Interest',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18v18H3V3z" />
+      </svg>
+    )
+  },
 ];
 
 export default function MobileNav() {
@@ -111,6 +175,7 @@ export default function MobileNav() {
                         }`
                       }
                     >
+                      {item.icon}
                       {item.label}
                     </NavLink>
                   </motion.li>

@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+
 #root {
   width: 100%;
   min-height: 100vh;
@@ -65,4 +67,40 @@
 
 .text-accent-muted {
   color: rgba(251, 191, 36, 0.6); /* amber-400/60 */
+}
+
+/* ===== NamaoHome Page Styles ===== */
+
+/* Shared background styles */
+.home-bg-base {
+  @apply fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed;
+}
+
+.home-bg-desktop {
+  @apply hidden lg:block;
+}
+
+.home-bg-tablet-landscape {
+  @apply hidden md:max-lg:landscape:block;
+}
+
+.home-bg-tablet-portrait {
+  @apply hidden md:max-lg:portrait:block;
+}
+
+.home-bg-mobile {
+  @apply lg:hidden md:hidden block;
+}
+
+.home-content-wrapper {
+  @apply relative z-10 w-screen min-h-screen p-8 flex items-center justify-center;
+}
+
+.home-border-frame {
+  @apply hidden md:max-lg:landscape:block md:max-lg:portrait:block lg:block;
+  @apply w-[90%] h-[85dvh] mx-auto;
+  border-radius: 2rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
 }

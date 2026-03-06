@@ -80,6 +80,11 @@ export const Slide1 = () =>{
                     />
                 </div>
             </div>
+            <div className="mt-4 text-label text-dark-strong font-semibold">
+                <a href="https://tcntrsc.ca/" target="_blank" rel="noopener noreferrer">
+                    Tataskweyak Cree Nation Stewardship 
+                </a>
+            </div>
         </div>
     )
 }
@@ -287,6 +292,7 @@ export const Slide6 = () =>{
 
                 </div>
             </div>
+            {/* add satellite view link with description and image */}
             <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
@@ -510,6 +516,7 @@ export const Slide12 = () =>{
                     </div>
                 </div>
             </div>
+            {/* add SatelliteView.tsx link with description and image */}
         </div>
     )
 }
@@ -648,11 +655,12 @@ export const Slide17 = () =>{
                     />
                 </div>
             </div>
+
             <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
 }
-
+{/* section const 17B for press conference here will create a page for press conference */}
 export const Slide18 = () =>{
     return (
         <div className="h-auto w-full">
@@ -676,6 +684,8 @@ export const Slide18 = () =>{
                         We took this step as part of our commitment to fulfill our inherent stewardship responsibilities for our lands and waters.
                     </div>
                 </div>
+
+                {/* add link panel to Researchreports page */}
             <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
@@ -715,6 +725,7 @@ export const Slide19 = () =>{
                     </div>
                 </div>
             </div>
+            {/* add link panel to Picture Gallery page */}
             <div className='h-[5vh] lg:h-[10vh] w-full' />
         </div>
     )
@@ -804,13 +815,8 @@ export const Slide22 = () =>{
             <div className='h-[5vh] lg:h-[10vh] w-full' />
             <div className='flex flex-col justify-center items-center p-2 lg:p-4'>
                 <div className="w-full flex justify-center items-center p-1 lg:p-6">
-                    <img loading="lazy" 
-                        className="w-[90%] lg:w-[75%] h-auto object-cover overflow-hidden"
-                        src="/sturgeonBanner.png"
-                        alt="Canada"
-                        width={200}
-                        height={200}
-                    />
+                 {/* Add link to SenatorMessage.tsx include profile pic of senator in link button with her name */}
+                     
                 </div>
             </div>
             <div className='h-[5vh] lg:h-[10vh] w-full' />
